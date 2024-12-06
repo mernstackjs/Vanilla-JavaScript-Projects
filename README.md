@@ -6,6 +6,13 @@ This repository contains a collection of various projects built using **Vanilla 
 
 ### 1. **StudentResult**
 
+# Student Result App
+
+This is a simple student result application built with vanilla JavaScript.  
+You can view the live demo here:
+
+[Student Result App - Live Demo](https://6752f386dae0392bb1185287--studentresult-vanilla-javascript.netlify.app/)
+
 A simple web app that allows you to input student details (name and subject marks), calculate their total marks, and display the result (pass/fail).
 
 #### Features:
