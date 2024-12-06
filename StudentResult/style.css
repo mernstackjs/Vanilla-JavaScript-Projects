@@ -1,0 +1,227 @@
+/* General styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #4caf50; /* Grön färg för att matcha temat */
+  font-weight: bold;
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2px; /* För ökat avstånd mellan bokstäverna */
+  padding-bottom: 20px;
+  border-bottom: 4px solid #4caf50; /* Grön linje under rubriken */
+}
+
+h4 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+#demo {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Student card styles */
+.student-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.student-card h4 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+  border-bottom: 2px solid #4caf50;
+  padding-bottom: 10px;
+}
+
+.student-card h1 {
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* Subject table styles */
+.subject-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+.subject-table th,
+.subject-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.subject-table th {
+  background-color: #4caf50;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+.subject-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.subject-table tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
+}
+
+.subject-table td {
+  font-size: 0.95em;
+}
+
+/* Status styles */
+.pass {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.fail {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Style for student result summary */
+.student-summary {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Headings */
+.student-summary h1 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+  border-bottom: 2px solid #4caf50;
+  padding-bottom: 10px;
+}
+
+/* Paragraphs with the results */
+.student-summary p {
+  font-size: 1.1em;
+  color: #555;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Highlighting strong text */
+.student-summary strong {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+/* List of subjects */
+.student-summary ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.student-summary li {
+  font-size: 1.1em;
+  color: #333;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.student-summary li:last-child {
+  border-bottom: none; /* Remove border from last item */
+}
+
+/* Styling for pass/fail status */
+.student-summary li span {
+  font-weight: bold;
+}
+
+.student-summary li .pass {
+  color: #155724;
+  background-color: #d4edda;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.student-summary li .fail {
+  color: #721c24;
+  background-color: #f8d7da;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+/* Responsive tables */
+@media (max-width: 768px) {
+  .student-summary {
+    padding: 15px;
+  }
+
+  .student-summary h1 {
+    font-size: 1.6em;
+  }
+
+  .student-summary p {
+    font-size: 1em;
+  }
+
+  .student-summary li {
+    font-size: 1em;
+  }
+
+  .subject-table {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .student-card {
+    padding: 15px;
+  }
+
+  .subject-table th,
+  .subject-table td {
+    padding: 8px;
+  }
+
+  h4 {
+    font-size: 1.3em;
+  }
+  h1 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4caf50;
+  }
+}
